@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="moreInfo" id="addingExpense">
+        <div>
+            <div class="cross-Cancel">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!--Form to fill to add contacts-->
+            <div class="addingForm">
+                <label for="addName">Expense Name</label>
+                <input class="inputs" id="addName" type="text">
+            </div>
+            <div class="addingForm">
+                <label for="addPrice">Price</label>
+                <input class="inputs" id="addPrice" type="number" >
+            </div>
+            <div class="addingForm">
+                <label for="addDate">Date</label>
+                <input class="inputs" id="addDate" type="date" placeholder="22/12/2003">
+            </div>
+            <div class="addingForm">
+                <button class="saveButton">Save</button>
+                <button class="cancelButton">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1 id="Heading">Expense Tracker</h1>
+    <div class="addExpense">
+        <i class="fa-solid fa-plus"></i>
+    </div>
+    <div class="navBar">
+        <div class="totalExpense">
+            <p id="totalExpense">Your total Expense: </p>
+        </div>
+    </div>
+    <div class="expenseList">
+        <div class="expenseSubList">
+            <div class="expenseOuter1">
+                <div class="expenseOuter2">
+                    <!-- <div class="expenseContainer">
+                            <p>Name</p>
+                            <p>Price</p>
+                            <p>Date</p>
+                            <div class="Delete">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
